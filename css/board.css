@@ -1,0 +1,152 @@
+.hexagon {
+    position: relative;
+    width: 200px;
+    height: 115.47px;
+    margin: 50px 0;
+    background-color: #b1b878;
+    background-size: auto 229.7854px;
+    background-position: center;
+    border-left: solid 1px #8f8f8f;
+    border-right: solid 1px #8f8f8f;
+    opacity: .6;
+}
+
+.hexTop,
+.hexBottom {
+    position: absolute;
+    z-index: 1;
+    width: 141.42px;
+    height: 141.42px;
+    overflow: hidden;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background: inherit;
+    left: 28.79px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+    content: "";
+    position: absolute;
+    width: 199.0000px;
+    height: 114.89270356873554px;
+    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-57.4464px);
+    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-57.4464px);
+    transform:          rotate(45deg) scaleY(1.7321) translateY(-57.4464px);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: inherit;
+}
+
+.hexTop {
+    top: -70.7107px;
+    border-top: solid 1px #8f8f8f;
+    border-right: solid 1px #8f8f8f;
+}
+
+.hexTop:after {
+    background-position: center top;
+}
+
+.hexBottom {
+    bottom: -70.7107px;
+    border-bottom: solid 1px #8f8f8f;
+    border-left: solid 1px #8f8f8f;
+}
+
+.hexBottom:after {
+    background-position: center bottom;
+}
+
+.hexagon:after {
+    content: "";
+    position: absolute;
+    top: 0.2887px;
+    left: 0;
+    width: 199.0000px;
+    height: 114.8927px;
+    z-index: 2;
+    background: inherit;
+}
+
+.centered{
+    width: 65% !important;
+    margin: 0 auto !important;
+}
+
+.right{
+    text-align:right;
+}
+
+.separate-bottom{
+    padding-bottom: 70px;
+}
+
+.board-row{
+    margin-bottom: -45px;
+    display: inline-flex;
+}
+
+.row_1{
+    margin-left: 202px;
+}
+.row_2{
+    margin-left: 101px;
+}
+.row_4{
+    margin-left: 101px;
+}
+.row_5{
+    margin-left: 202px;
+}
+
+.material-ore{
+    background-image: url("../img/Ore.jpeg") !important;
+}
+
+.material-wheat{
+    background-image: url("../img/wheat.jpg") !important;
+}
+
+.material-brick{
+    background-image: url("../img/brick_pile.jpg") !important;
+}
+
+.material-sheep{
+    background-image: url("../img/sheep.jpg") !important;
+}
+
+.material-lumber{
+    background-image: url("../img/forest.jpg") !important;
+}
+
+.material-desert{
+    background-image: url("../img/desert.jpeg") !important;
+}
+
+.button_a{
+    opacity: 1;
+    border-color: gold;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration:5s;
+    -webkit-animation-iteration-count:2;
+    -webkit-animation-timing-function:linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration:5s;
+    -moz-animation-iteration-count:2;
+    -moz-animation-timing-function:linear;
+    z-index: 999;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform:rotate(0deg);}
+    to {  -webkit-transform:rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform:rotate(0deg);}
+    to {  -moz-transform:rotate(360deg);}
+}
