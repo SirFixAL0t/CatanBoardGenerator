@@ -8,12 +8,12 @@ I made this generator for fun, and for those who have little tables and cannot s
 
 The features are limited, but with feedback and time I will update this to be more useful.
 
-##Materials assignment
+## Materials assignment
 The generator builds the board for you. It assigns 3 ores, 3 bricks, 4 wheat, 4 lumber, 4 sheep, and 1 desert automatically.  
-##Starting Point
+## Starting Point
 The generator assigns a starting point on the outside of the board. That's the position of the "A" token.
 
-##TODO
+## TODO
 ### Adding Dice number to tiles
 For now, the generator only assigns the starting point, so you can put the tokens face up (starting from the marked tile).
 In a future release, the values will be assigned automatically. 
